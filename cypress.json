@@ -1,0 +1,13 @@
+{
+  "chromeWebSecurity": false,
+  "defaultCommandTimeout": 5000,
+  "experimentalComponentTesting": true,
+  "experimentalFetchPolyfill": true,
+  "experimentalShadowDomSupport": true,
+  "componentFolder": "cypress/component",
+  "testFiles": "**/*.spec.*",
+  "video": true,
+  "env": {
+    "RETRIES": 0
+  }
+}

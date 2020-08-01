@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { FC } from "react";
+import GlobalStyle from "./GlobalStyle";
+import ProgressBar from "./ProgressBar";
 
-function App() {
+const App: FC = () => {
+  const steps = ["Basket", "Adress", "Payment", "Confirmation"];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <>
+      <GlobalStyle />
+      <main>
+        <ProgressBar steps={steps} />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          <span role="img" aria-label="emoji-wave">
+            👋
+          </span>
+          &nbsp; Hello, there!
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+        <p>This is... Cypress unit test starter</p>
+      </main>
+    </>
   );
-}
+};
 
 export default App;
