@@ -4,7 +4,9 @@ A small repository to demonstrate unit testing of Progress Bar component in Cypr
 
 https://medium.com/@koalamango/cypress-unit-testing-react-components-with-typescript-77b38e5043b3
 
-![Cypress Unit Test](assets/ProgressBar.pngkeki-preview.png)
+
+![Cypress Unit Test](assets/ProgressBar.png)
+
 
 ### Development
 
@@ -18,5 +20,3 @@ yarn build
 # To test
 yarn test:unit
 ```
-
-View at [http//:localhost:3000/](http://localhost:3000/)
