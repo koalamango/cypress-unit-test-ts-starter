@@ -1,13 +1,10 @@
-/// <reference types="cypress" />
-import React from "react";
-import { mount } from "cypress-react-unit-test";
 import ProgressBar from "../../src/ProgressBar";
-import GlobalStyle from "../../src/globalStyle";
+import GlobalStyle from "../../src/GlobalStyle";
 
-describe("Progress Bar", () => {
+describe("<ProgressBar />", () => {
   const mockSteps = ["Step 1", "Step 2", "Step 3", "Step 4"];
   it("renders steps", () => {
-    mount(
+    cy.mount(
       <ProgressBar steps={mockSteps}>
         <GlobalStyle />
       </ProgressBar>
@@ -26,9 +23,8 @@ describe("Progress Bar", () => {
       .and("have.css", "background-color", "rgb(255, 255, 255)")
       .and("have.css", "border-color", "rgb(0, 182, 237)");
   });
-
   it("renders active steps", () => {
-    mount(
+    cy.mount(
       <ProgressBar steps={mockSteps} current={3}>
         <GlobalStyle />
       </ProgressBar>
