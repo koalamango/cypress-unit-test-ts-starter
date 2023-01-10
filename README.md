@@ -1,6 +1,6 @@
 # Cypress Unit Test Starter
 
-A small repository to demonstrate unit testing of Progress Bar component in Cypress 12. It's built with React in TypeScript and styling with styled-components. For more information see the following tutorial
+A small repository to demonstrate unit testing of Progress Bar component in Cypress 12. It's built with Create-React-App with TypeScript and Styled-components. For more information see the following tutorial
 
 https://medium.com/@koalamango/cypress-unit-testing-react-components-with-typescript-77b38e5043b3
 
